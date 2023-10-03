@@ -1,11 +1,11 @@
 let firstCard = 10
-let secondCard = 10
+let secondCard = 12
 let sum = firstCard + secondCard
 let hasBlackjack = false
 let isAlive = true
 let message = ""
-let messageEl = document.getElementsByClassName("message-el")
-console.log(messageEl)
+let messageEl = document.getElementById("message-el")
+
 
 //store the message-el paragraph in a variable 
 function startGame(){
@@ -18,10 +18,11 @@ function startGame(){
         message = "You're out of the game!"
         isAlive = false
     }
+
+    messageEl.textContent = message
 }
-console.log(message)
 
 //Display the message
-messageEl.textContent = message
+
 
 //cash out
