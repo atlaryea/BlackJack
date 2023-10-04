@@ -18,11 +18,5 @@ function startGame(){
         message = "You're out of the game!"
         isAlive = false
     }
-
     messageEl.textContent = message
 }
-
-//Display the message
-
-
-//cash out
